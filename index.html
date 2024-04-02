@@ -20,6 +20,7 @@
     }
     th {
       font-weight: bold;
+      text-align: center;
     }
     th:first-child {
       border-right: none;
@@ -31,6 +32,9 @@
       font-weight: bold;
     }
     .no-separator td {
+      border-top: none;
+    }
+    .no-border td {
       border-top: none;
     }
   </style>
@@ -66,11 +70,13 @@
     <td>55</td>
     <td>R$8.000,00</td>
   </tr>
-  <tr class="media-salario no-separator">
-    <td colspan="3">Média salarial</td>
+  <tr class="media-salario no-border">
+    <td></td>
+    <td colspan="2" style="text-align: center;">Média de Sálario</td>
     <td>R$4.375,00</td>
   </tr>
 </table>
 
 </body>
 </html>
+
