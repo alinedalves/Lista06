@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Funcionários</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin: 0 auto;
+    }
+    th, td {
+      border: 1px solid black;
+      text-align: left;
+      padding: 6px;
+    }
+    th {
+      font-weight: bold;
+    }
+    th:first-child {
+      border-right: none;
+    }
+    .separator {
+      border-top: 2px solid black;
+    }
+    .media-salario {
+      font-weight: bold;
+    }
+    .no-separator td {
+      border-top: none;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Nome do Funcionário</th>
+    <th>Sexo</th>
+    <th>Idade</th>
+    <th>Salário</th>
+  </tr>
+  <tr>
+    <td>Maria José</td>
+    <td rowspan="2" class="separator">Feminino</td>
+    <td>14</td>
+    <td>R$1.500,00</td>
+  </tr>
+  <tr>
+    <td>Ana Clara</td>
+    <td>25</td>
+    <td>R$3.000,00</td>
+  </tr>
+  <tr>
+    <td>João Márcio</td>
+    <td rowspan="2" class="separator">Masculino</td>
+    <td>74</td>
+    <td>R$5.000,00</td>
+  </tr>
+  <tr class="no-separator">
+    <td>Robson Crusoé</td>
+    <td>55</td>
+    <td>R$8.000,00</td>
+  </tr>
+  <tr class="media-salario no-separator">
+    <td colspan="3">Média salarial</td>
+    <td>R$4.375,00</td>
+  </tr>
+</table>
+
+</body>
+</html>
